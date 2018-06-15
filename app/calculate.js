@@ -26,7 +26,7 @@ exports.calculateNextState = function(s, value) {
     }
     else
     {
-        s = JSON.parse(s);
+        //s = (s);
         console.log("s was state")
     }
     //define the input value type
@@ -36,15 +36,15 @@ exports.calculateNextState = function(s, value) {
         case "*":
         case "/":  
             console.log("setOperator");                 
-            return JSON.stringify(setOperator(s,value));                    
+            return (setOperator(s,value));                    
             break;
         case "=":
             console.log("calculate");
-            return JSON.stringify(calculate(s));
+            return (calculate(s));
             break;
         default: //probably a number
             console.log("addNumber");
-            return JSON.stringify(addNumber(s,value));
+            return (addNumber(s,value));
             break;
     }              
 }
