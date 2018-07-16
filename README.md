@@ -11,31 +11,44 @@ In order to run this project we use:
 * [Node.js](http://www.dropwizard.io/1.0.2/docs/) - using express and mocha among other packages.
 * [Docker](https://maven.apache.org/) - for create docker container and docker compose.
 
-### Prerequisites
-
-open GIT CMD and 
-
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+Open GIT CMD and clone the project to your local computer.
+Use the comman:
 ```
-Give the example
+git clone https://github.com/osnatairy/Calculator-Service.git
 ```
 
-And repeat
+Now, that you have the project on your computer, you can test it.
+The project has unit test and integration test.
 
+You can run the unit test by using the command:
 ```
-until finished
+g
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+You can run the integration test by using the command:
+```
+g
+```
+
+For the next step you should have Docker on your computer.
+
+Run the dockr:
+```
+sudo docker build . -t currency-calculator
+sudo docker run -d -p 3000:3000 currency-calculator
+```
+
+Run the docker-compose:
+```
+sudo docker-compose up -d
+```
+
+Now you can run the Calculate Application. Open your brouser and insert the follow URL:
+ [localhost:8000](http://localhost:8000/login) 
+
 
 ## Running the tests
 
