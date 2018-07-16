@@ -25,14 +25,9 @@ git clone https://github.com/osnatairy/Calculator-Service.git
 Now, that you have the project on your computer, you can test it.
 The project has unit test and integration test.
 
-You can run the unit test by using the command:
+You can run the unit test and the integration test by using the command:
 ```
-g
-```
-
-You can run the integration test by using the command:
-```
-g
+npm run test
 ```
 
 ### Docker & Docker-compose
@@ -58,5 +53,5 @@ Login and use the calculator. :)
 
 ## Authors
 
-* **OsnatDrien** - osnatairy@gmail.com
+* **Osnat Drien** - osnatairy@gmail.com
 * **Khen Aharon** - khen.aharon@gmail.com
