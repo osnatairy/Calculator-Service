@@ -4,7 +4,7 @@
   "description": "calculate function and test",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha --exit --reporter spec"
   },
   "author": "Khen Aharon & Osnat Drien",
   "license": "ISC",

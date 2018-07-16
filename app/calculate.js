@@ -4,8 +4,6 @@
 //2 - the player press operator after start or after number
 //3 - the player press number after opperator
 
-
-
 function setState(){
     let obj = {
         "num1": 0,

@@ -1,14 +1,19 @@
 # Calculator Service
 
-One Paragraph of project description goes here
+This project created as an exercise in "Tools and Methodologies in Web Development" course in Bar Ilan University.
+This is a calculator web service you can use easily by following those instructions.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+In order to run this project we use:
+
+* [Git](https://maven.apache.org/) - to get the project.
+* [Node.js](http://www.dropwizard.io/1.0.2/docs/) - using express and mocha among other packages.
+* [Docker](https://maven.apache.org/) - for create docker container and docker compose.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+open GIT CMD and 
 
 ```
 Give examples
