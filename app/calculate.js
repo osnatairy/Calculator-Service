@@ -49,7 +49,7 @@ exports.calculateNextState = function(s, value) {
 
 function setOperator(s, val){   
     
-    console.log("change operstor")
+    console.log("change operator")
     console.log(s);
     if(s.state ==3)// != 0 && s.state != 2)
     //    s.num1 = s.num2;

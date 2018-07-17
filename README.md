@@ -21,9 +21,14 @@ git clone https://github.com/osnatairy/Calculator-Service.git
 ```
 
 ## Running the tests
-
-Now, that you have the project on your computer, you can test it.
-The project has unit test and integration test.
+First verify that you got the tools needed for running and testing - express, chai and mocha:
+```
+npm install express
+npm install chai
+npm install mocha
+```
+Now, that you have the project on your computer (and the tools), you can test it.
+The project has many unit tests and some integration test (we chose the pyramid of testing for the homework).
 
 You can run the unit test and the integration test by using the command:
 ```
