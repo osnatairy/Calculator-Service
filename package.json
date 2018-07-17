@@ -6,6 +6,10 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --exit --reporter spec"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osnatairy/Calculator-Service.git"
+  },
   "author": "Khen Aharon & Osnat Drien",
   "license": "ISC",
   "dependencies": {

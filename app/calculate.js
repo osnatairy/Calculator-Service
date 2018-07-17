@@ -58,11 +58,26 @@ function setOperator(s, val){
     //else
     s.operator = val;    
     s.display = s.num1.toString();            
-    s.state = 2;  
+    s.state = 2; 
+    checkForInfinityError(s)
     console.log(s);
     return s;   
 }
 
+function checkForInfinityError(s)
+{
+    if(s.num1 == Infinity){
+        s.num1 = 0
+        s.display = "ERROR" 
+        s.state = 0
+    }
+    if(s.num1 == Infinity){
+        s.num1 = 0
+        s.display = "ERROR"
+        s.state = 0 
+    }
+    return s;
+}
 function calculate(s){
     
     switch (s.state) {
@@ -85,7 +100,7 @@ function calculate(s){
     
     s.num1 = operate(s);
     s.display = s.num1.toString();
-    
+    checkForInfinityError(s)
     console.log(s);
     console.log("***");
     return s;                 

@@ -1,9 +1,5 @@
-
 var expect    = require("chai").expect;
 var calculator = require("../app/calculate");
-
-
-
 
 describe('Test1 for calculator', function() {
 
@@ -1823,7 +1819,32 @@ describe('Test50 for calculator', function() {
     
     it('check332', async () => {
 		s = calculator.calculateNextState(s, "=");
-        expect((s).display).to.eql("100");  // We can sleep well at night.
+        expect((s).display).to.eql("100"); 
     });
+    it('check333', async () => {
+		s = calculator.calculateNextState(s, "/");
+        expect((s).display).to.eql("100");  
+    });
+    it('check334', async () => {
+		s = calculator.calculateNextState(s, "0");
+        expect((s).display).to.eql("0");  
+    });
+    it('check335', async () => {
+		s = calculator.calculateNextState(s, "=");
+        expect((s).display).to.eql("ERROR");  
+    });
+    it('check336', async () => {
+		s = calculator.calculateNextState(s, "-");
+        expect((s).display).to.eql("0");  
+    });
+    it('check337', async () => {
+		s = calculator.calculateNextState(s, "5");
+        expect((s).display).to.eql("5"); 
+    });
+    it('check338', async () => {
+		s = calculator.calculateNextState(s, "=");
+        expect((s).display).to.eql("-5");  // We can sleep well at night.
+    });
+   
 });
 
